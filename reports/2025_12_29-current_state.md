@@ -51,6 +51,9 @@ node perimembrane/membrane/viscera/scripts/e2e_agent_link/setup.mjs
 node perimembrane/membrane/viscera/scripts/e2e_agent_link/teardown.mjs
 ```
 
+## Symlink Status (Future Milestone)
+The `.opencode/cwd` symlink is **not created yet**. That behavior is Milestone 4 (Linking Logic) and will be implemented later. Current flows stop after selection and do not write any symlink.
+
 ## Local Workspace State
 - Root folder contains only: `code/`, `pm/`, `.opencode/`.
 - PM repo clean and up to date with origin.
