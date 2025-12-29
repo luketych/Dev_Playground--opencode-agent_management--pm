@@ -1,15 +1,17 @@
 ---
 id: 1-3-4
 title: "Add E2E Test Harness for opencode-agent-link"
-status: in_progress
+status: complete
 priority: medium
 assignee: "opencode"
 created: 2025-12-28
 updated: 2025-12-28
+completed: 2025-12-28
 tags: [test, e2e, tui]
 milestone: M3
 dependencies: [1-3-3]
 estimated_effort: "45 minutes"
+actual_effort: "45 minutes"
 ---
 # Add E2E Test Harness for opencode-agent-link
 
@@ -30,19 +32,27 @@ Create a minimal E2E test harness that can simulate agent directories and run th
 
 ## How to Re-Verify Success
 ```bash
-# Example (paths may change based on test harness)
 node perimembrane/membrane/viscera/test/e2e_agent_link.test.mjs
 ```
 
 ## Implementation Checklist
-- [ ] Create `perimembrane/membrane/viscera/test/`.
-- [ ] Create `perimembrane/membrane/viscera/test/resources/`.
-- [ ] Add an E2E test that:
+- [x] Create `perimembrane/membrane/viscera/test/`.
+- [x] Create `perimembrane/membrane/viscera/test/resources/`.
+- [x] Add an E2E test that:
   - Creates a temp directory with `opencode-agents/<agent>/.opencode`.
   - Runs `opencode-agent-link` from that temp dir.
   - Verifies prompt, selection, and error paths.
-- [ ] Document how to run the test.
+- [x] Document how to run the test.
 
 ## Measurable Success Criteria
 - Test executes without external dependencies.
 - Test validates at least one happy path and one error path.
+
+## Tests
+- Run `node perimembrane/membrane/viscera/test/e2e_agent_link.test.mjs`.
+
+## Proof of Completion
+Verification run (2025-12-28):
+```
+OK e2e
+```
