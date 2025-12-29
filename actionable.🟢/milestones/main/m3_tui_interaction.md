@@ -3,7 +3,7 @@ id: M3
 title: "TUI Interaction"
 phase: 2
 duration: "1 Hour"
-status: "Not Started"
+status: "In Progress"
 priority: "Medium"
 branch: "feature/tui-interaction"
 tags: [ui, tui, inquirer]
@@ -13,7 +13,7 @@ dependencies: [M2]
 
 **Phase**: 2 - User Interface  
 **Duration**: 1 Hour  
-**Status**: Not Started  
+**Status**: In Progress  
 **Priority**: Medium
 
 ## Deliverable
@@ -48,3 +48,7 @@ Interactive selection prompt for selecting the target agent.
 ## Notes
 - User flow now matches the PRD vision for interactivity.
 - Sets up asynchronous infrastructure for the linking step.
+
+## Progress
+- Tasks 1-3-1 through 1-3-3 are complete and in `tasks/review`.
+- Tasks 1-3-4 and 1-3-4b are in progress pending PR #11 (scripted E2E harness).
