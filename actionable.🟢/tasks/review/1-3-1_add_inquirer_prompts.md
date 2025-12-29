@@ -1,15 +1,17 @@
 ---
 id: 1-3-1
 title: "Add @inquirer/prompts Dependency"
-status: in_progress
+status: complete
 priority: high
 assignee: "opencode"
 created: 2025-12-28
 updated: 2025-12-28
+completed: 2025-12-28
 tags: [tui, deps, nodejs]
 milestone: M3
 dependencies: [M2]
 estimated_effort: "20 minutes"
+actual_effort: "20 minutes"
 ---
 # Add @inquirer/prompts Dependency
 
@@ -35,10 +37,19 @@ node -e "const pkg=require('./package.json'); console.log(pkg.dependencies['@inq
 ```
 
 ## Implementation Checklist
-- [ ] Add `@inquirer/prompts` to dependencies in `package.json`.
-- [ ] Run `npm install`.
-- [ ] Verify dependency exists in `package.json`.
+- [x] Add `@inquirer/prompts` to dependencies in `package.json`.
+- [x] Run `npm install`.
+- [x] Verify dependency exists in `package.json`.
 
 ## Measurable Success Criteria
 - Dependency is present in `package.json`.
 - `npm install` completes without errors.
+
+## Tests
+- Not applicable (dependency setup only). Use the verification commands above.
+
+## Proof of Completion
+Verification run (2025-12-28):
+```
+OK dep
+```
