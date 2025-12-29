@@ -1,7 +1,7 @@
 ---
 id: 1-3-4b
 title: "Add Explicit E2E Test Cleanup"
-status: pending
+status: in_progress
 priority: low
 assignee: "opencode"
 created: 2025-12-28
