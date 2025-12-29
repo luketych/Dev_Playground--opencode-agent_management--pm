@@ -1,7 +1,7 @@
 ---
 id: 1-3-2
 title: "Implement Agent Selection Prompt"
-status: pending
+status: in_progress
 priority: high
 assignee: "opencode"
 created: 2025-12-28
