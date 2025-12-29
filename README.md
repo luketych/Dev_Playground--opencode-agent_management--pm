@@ -16,6 +16,9 @@ Multi-agent setups are powerful but can drift over time. This repo is about maki
 - **fast** (one command instead of manual linking)
 - **safe** (no destructive changes)
 
+## Intent: Focused Agent Sets
+The goal is to manage different namespaces of OpenCode agents without overwhelming the tab or `/agents` menu. We can link only a relevant subset at a time (for example, just git-related agents, or later only code-review agents) to keep sessions focused. This enables flexible agent configurations without a giant monorepo of settings and features.
+
 ## Repository contents
 - `descriptions/prd.md` — detailed product requirements for `opencode-agent-link`
 - prototypes and experiments (as they evolve)
