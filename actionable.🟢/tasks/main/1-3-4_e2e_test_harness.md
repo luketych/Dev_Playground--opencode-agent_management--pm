@@ -18,7 +18,7 @@ estimated_effort: "45 minutes"
 **DONE**: A `scripts/e2e_agent_link/` subdir exists under `perimembrane/membrane/viscera/` with:
 - `setup.mjs` that creates a local test workspace populated with example `opencode-agents/` from `resources/`.
 - `teardown.mjs` that removes the workspace.
-- `resources/opencode-agents/<agent>/.opencode` example tree.
+- `resources/opencode-agents/<agent>/` example tree (setup creates `.opencode` markers at runtime).
 
 **GOOD-ENOUGH**: Setup script creates a usable workspace and prints how to run the CLI.
 
@@ -47,8 +47,8 @@ node perimembrane/membrane/viscera/scripts/e2e_agent_link/teardown.mjs
 
 ## Implementation Checklist
 - [ ] Create `perimembrane/membrane/viscera/scripts/e2e_agent_link/`.
-- [ ] Create `resources/opencode-agents/<agent>/.opencode` example tree.
-- [ ] Add `setup.mjs` to create workspace and copy resources.
+- [ ] Create `resources/opencode-agents/<agent>/` example tree.
+- [ ] Add `setup.mjs` to create workspace, copy resources, and create `.opencode` markers.
 - [ ] Add `teardown.mjs` to remove workspace.
 - [ ] Print workspace path and CLI command from `setup.mjs`.
 
