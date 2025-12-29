@@ -1,11 +1,12 @@
 ---
 id: 1-3-4
 title: "Add Scripted E2E Harness for opencode-agent-link"
-status: in_progress
+status: complete
 priority: medium
 assignee: "opencode"
 created: 2025-12-28
 updated: 2025-12-28
+completed: 2025-12-28
 tags: [test, e2e, tui]
 milestone: M3
 dependencies: [1-3-3]
@@ -63,6 +64,9 @@ Verification run (2025-12-28):
 WORKSPACE: /Users/luketych/_/Dev/Dev_Playground/opencode-agent_management/code/perimembrane/membrane/viscera/scripts/e2e_agent_link/workspace
 RUN: cd "/Users/luketych/_/Dev/Dev_Playground/opencode-agent_management/code/perimembrane/membrane/viscera/scripts/e2e_agent_link/workspace" && node "/Users/luketych/_/Dev/Dev_Playground/opencode-agent_management/code/bin/opencode-agent-link"
 TEARDOWN: node "/Users/luketych/_/Dev/Dev_Playground/opencode-agent_management/code/perimembrane/membrane/viscera/scripts/e2e_agent_link/teardown.mjs"
-OK prompt
+? Select agent to link current project into:
+❯ gemini
+  gpt
+✔ Select agent to link current project into: gemini
 REMOVED: /Users/luketych/_/Dev/Dev_Playground/opencode-agent_management/code/perimembrane/membrane/viscera/scripts/e2e_agent_link/workspace
 ```
