@@ -1,7 +1,7 @@
 ---
 id: 1-2-3
 title: "Implement Error Handling for Discovery Failures"
-status: pending
+status: in_progress
 priority: high
 assignee: "opencode"
 created: 2025-12-28
