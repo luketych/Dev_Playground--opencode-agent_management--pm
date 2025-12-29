@@ -1,12 +1,11 @@
 ---
 id: 1-3-4
 title: "Add Scripted E2E Harness for opencode-agent-link"
-status: complete
+status: in_progress
 priority: medium
 assignee: "opencode"
 created: 2025-12-28
 updated: 2025-12-28
-completed: 2025-12-28
 tags: [test, e2e, tui]
 milestone: M3
 dependencies: [1-3-3]

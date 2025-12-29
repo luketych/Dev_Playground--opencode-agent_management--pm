@@ -1,12 +1,11 @@
 ---
 id: 1-3-4b
 title: "Add Explicit E2E Workspace Cleanup"
-status: complete
+status: in_progress
 priority: low
 assignee: "opencode"
 created: 2025-12-28
 updated: 2025-12-28
-completed: 2025-12-28
 tags: [test, e2e, cleanup]
 milestone: M3
 dependencies: [1-3-4]
