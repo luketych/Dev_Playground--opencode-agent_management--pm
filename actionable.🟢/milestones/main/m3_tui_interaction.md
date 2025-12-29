@@ -28,6 +28,7 @@ Interactive selection prompt for selecting the target agent.
 - [1-3-1] Install and Configure @inquirer/prompts
 - [1-3-2] Implement Agent Selection Prompt
 - [1-3-3] Handle User Cancellation (SIGINT)
+- [1-3-4] Add E2E Test Harness for opencode-agent-link
 
 ## Success Criteria
 - [ ] TUI appears with list of discovered agents when run in a valid directory.

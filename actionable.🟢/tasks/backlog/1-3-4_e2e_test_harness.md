@@ -6,9 +6,9 @@ priority: medium
 assignee: "opencode"
 created: 2025-12-28
 updated: 2025-12-28
-tags: [test, e2e]
-milestone: null
-dependencies: []
+tags: [test, e2e, tui]
+milestone: M3
+dependencies: [1-3-3]
 estimated_effort: "45 minutes"
 ---
 # Add E2E Test Harness for opencode-agent-link
