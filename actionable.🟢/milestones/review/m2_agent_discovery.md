@@ -3,7 +3,7 @@ id: M2
 title: "Agent Discovery Logic"
 phase: 1
 duration: "1 Hour"
-status: "Not Started"
+status: "Complete"
 priority: "High"
 branch: "feature/agent-discovery"
 tags: [logic, fs, nodejs]
@@ -13,7 +13,7 @@ dependencies: [M1]
 
 **Phase**: 1 - Foundation  
 **Duration**: 1 Hour  
-**Status**: Not Started  
+**Status**: Complete  
 **Priority**: High
 
 ## Deliverable
@@ -30,10 +30,10 @@ Robust logic for scanning and validating potential agent directories.
 - [1-2-3] Implement Error Handling for Discovery Failures
 
 ## Success Criteria
-- [ ] Correctly identifies eligible agents in a test directory (e.g., `viscera/opencode-agents`).
-- [ ] Correctly ignores directories missing the `.opencode/` marker.
-- [ ] Prints PRD-compliant error message when `opencode-agents/` is missing.
-- [ ] Prints "No eligible agents found" when directory is empty or all agents are invalid.
+- [x] Correctly identifies eligible agents in a test directory (e.g., `viscera/opencode-agents`).
+- [x] Correctly ignores directories missing the `.opencode/` marker.
+- [x] Prints PRD-compliant error message when `opencode-agents/` is missing.
+- [x] Prints "No eligible agents found" when directory is empty or all agents are invalid.
 
 ## Dependencies
 - Milestone 1 (Project Scaffolding) completed.
@@ -46,3 +46,7 @@ Robust logic for scanning and validating potential agent directories.
 ## Notes
 - Ensures the tool is strictly local to the project root.
 - Establishes the internal data structure for "selectable" agents.
+
+## Review Notes
+- M2 tasks (1-2-1 through 1-2-3) are archived with proofs in `actionable.🟢/tasks/archive/`.
+- Success criteria validated via task-level verification commands.
