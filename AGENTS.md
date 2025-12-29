@@ -1,48 +1,43 @@
 # AGENTS.md
 
-## Scope
-This file defines everything needed to complete **Task 1-1-1: Initialize NPM Package and ESM Configuration**. It is intentionally limited to that task only and should not include work from later tasks or milestones.
+## Purpose
+Project management source of truth for opencode-agent-link. This repo governs planning, verification, and documentation of work across the codebase.
 
-## Task Reference
-- Task file: `actionable.🟢/tasks/1-1-1_npm_init.md`
-- Milestone file: `actionable.🟢/milestones/m1_scaffolding.md`
+## Artifact Map
 - PRD: `descriptions/_0/prd.md`
+- Milestones: `actionable.🟢/milestones/`
+- Tasks (active): `actionable.🟢/tasks/main/`
+- Tasks (reviewed): `actionable.🟢/tasks/review/`
+- Tasks (final): `actionable.🟢/tasks/archive/`
+- Tasks (snapshots): `actionable.🟢/tasks/historical/`
 
-## Goal
-Create or update the root `package.json` so this repo is a valid **Node.js ESM** project for the `opencode-agent-link` CLI.
+## Workflow (Lifecycle)
+- New work starts in `tasks/main` (pending).
+- Completed work moves to `tasks/review` with proofs, checks, and status update.
+- After acceptance, move to `tasks/archive` (final record).
+- `tasks/historical` is read-only snapshots (do not edit).
 
-## Requirements (Source of Truth)
-From Task 1-1-1 and PRD:
-- Project must be **ESM** (set `"type": "module"`).
-- Package name: `opencode-agent-link`.
-- Version: `1.0.0` (initial).
-- Add a concise description based on the PRD:
-  - Suggested: `"Small CLI with TUI to link a project into OpenCode agent repos"`.
-- Keep dependencies minimal (none required for this task).
-- Do **not** add `bin` mappings yet (handled in Task 1-1-4).
-- Do **not** add external dependencies yet (handled later).
+## Breadcrumb Commit Style
+Commit messages must capture intent, outcome, proof, and side effects.
+Recommended format (multi-line):
+- Intent
+- Accomplished
+- Proof (commands + outputs)
+- Hoped / Lacking
+- Complexity / Side effects
+- Fit / Context
+- Worked-by
 
-## Files to Create/Modify
-- `package.json` (repo root)
+## Verification Discipline
+- Every completed task must include a re-verification command.
+- Proof output must be recorded in the task file AND in the commit message.
+- Avoid ambiguous checks; prefer deterministic scripts.
 
-## Out of Scope (Do NOT Do)
-- Do not create `bin/` or `src/` directories (Task 1-1-2).
-- Do not implement CLI flag logic (Task 1-1-3).
-- Do not add `bin` field or run `npm link` (Task 1-1-4).
-- Do not add dependencies.
-- Do not modify any files outside `package.json`.
+## PR / Branching Rules
+- Use `gh` for PRs and repo operations.
+- One task or cohesive change per branch.
+- Merge only after verification artifacts are recorded.
 
-## Implementation Notes
-- If `package.json` does not exist, initialize a basic one (e.g., `npm init -y`) and then edit fields.
-- If it exists, update only the required fields.
-- Keep ASCII-only content.
-
-## Verification (Good Enough)
-- `package.json` exists at repo root.
-- Contains: `"name": "opencode-agent-link"`.
-- Contains: `"version": "1.0.0"`.
-- Contains: `"type": "module"`.
-- Contains a short PRD-based description.
-
-## Completion Criteria
-Task 1-1-1 is complete when `package.json` meets the above requirements and no other files are changed.
+## Scope Boundaries
+- PM repo contains planning artifacts only.
+- Implementation lives in the code repo: https://github.com/luketych/Dev_Playground--opencode-agent_management--code
