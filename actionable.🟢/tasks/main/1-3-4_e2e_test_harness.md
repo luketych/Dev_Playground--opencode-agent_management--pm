@@ -1,7 +1,7 @@
 ---
 id: 1-3-4
 title: "Add E2E Test Harness for opencode-agent-link"
-status: pending
+status: in_progress
 priority: medium
 assignee: "opencode"
 created: 2025-12-28
