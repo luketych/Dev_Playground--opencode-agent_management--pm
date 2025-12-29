@@ -1,7 +1,7 @@
 ---
 id: 1-3-1
 title: "Add @inquirer/prompts Dependency"
-status: pending
+status: in_progress
 priority: high
 assignee: "opencode"
 created: 2025-12-28
