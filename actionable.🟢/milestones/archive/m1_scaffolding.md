@@ -3,7 +3,7 @@ id: M1
 title: "Project Scaffolding & CLI Skeleton"
 phase: 1
 duration: "1 Hour"
-status: "Not Started"
+status: "Complete"
 priority: "High"
 branch: "feature/scaffolding"
 tags: [setup, nodejs, cli, scaffolding]
@@ -13,7 +13,7 @@ dependencies: []
 
 **Phase**: 1 - Foundation  
 **Duration**: 1 Hour  
-**Status**: Not Started  
+**Status**: Complete  
 **Priority**: High
 
 ## Deliverable
@@ -27,16 +27,17 @@ Established project structure and basic CLI entry point.
 
 ## Proposed Tasks
 - [1-1-1] Initialize NPM Package and ESM Configuration
+- [1-1-1b] Enhance package.json Metadata Beyond Minimum
 - [1-1-2] Create CLI Directory Structure and Entry Point
 - [1-1-3] Implement Argument Parsing for Help and Version
 - [1-1-4] Global CLI Link Configuration
 
 ## Success Criteria
-- [ ] `package.json` created with `"type": "module"` and correct metadata.
-- [ ] `bin/opencode-agent-link` exists with proper hashbang and execute permissions.
-- [ ] `node bin/opencode-agent-link --help` prints usage instructions.
-- [ ] `node bin/opencode-agent-link --version` prints current version.
-- [ ] `npm link` allows running `opencode-agent-link` from any directory.
+- [x] `package.json` created with `"type": "module"` and correct metadata.
+- [x] `bin/opencode-agent-link` exists with proper hashbang and execute permissions.
+- [x] `node bin/opencode-agent-link --help` prints usage instructions.
+- [x] `node bin/opencode-agent-link --version` prints current version.
+- [x] `npm link` allows running `opencode-agent-link` from any directory.
 
 ## Dependencies
 - Node.js 18+ installed.
@@ -50,3 +51,7 @@ Established project structure and basic CLI entry point.
 - Foundation for the entire project.
 - Establishes the core module system and development workflow.
 - Context: `descriptions/_0/prd.md` for CLI requirements.
+
+## Review Notes
+- M1 tasks (1-1-1 through 1-1-4 and 1-1-1b) are archived with proofs in `actionable.🟢/tasks/archive/`.
+- All success criteria validated via task-level verification commands.
