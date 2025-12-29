@@ -20,6 +20,9 @@ Multi-agent setups are powerful but can drift over time. This repo is about maki
 - `descriptions/prd.md` — detailed product requirements for `opencode-agent-link`
 - prototypes and experiments (as they evolve)
 
+## Management Repository
+This repo is the project management source of truth. It houses milestones, tasks, verification proofs, and planning artifacts that guide development. Implementation lives in the separate code repo.
+
 ## Tags / Keywords / SEO 🔎✨
 Tags: #OpenCode #LLM #AI #MultiAgent #AgentManagement #CLI #TUI #NodeJS #Symlink #DevTools #WorkspaceLinking #Automation #DeveloperExperience
 
