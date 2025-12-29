@@ -1,7 +1,7 @@
 ---
 id: 1-2-2
 title: "Develop Agent Scanner Function"
-status: pending
+status: in_progress
 priority: high
 assignee: "opencode"
 created: 2025-12-28
