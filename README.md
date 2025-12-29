@@ -23,6 +23,12 @@ Multi-agent setups are powerful but can drift over time. This repo is about maki
 ## Management Repository
 This repo is the project management source of truth. It houses milestones, tasks, verification proofs, and planning artifacts that guide development. Implementation lives in the separate code repo.
 
+## Task Directories
+- `actionable.🟢/tasks/backlog/` - upcoming work
+- `actionable.🟢/tasks/main/` - active tasks in progress
+- `actionable.🟢/tasks/review/` - completed tasks awaiting review
+- `actionable.🟢/tasks/archive/` - final record of completed tasks
+
 ## Tags / Keywords / SEO 🔎✨
 Tags: #OpenCode #LLM #AI #MultiAgent #AgentManagement #CLI #TUI #NodeJS #Symlink #DevTools #WorkspaceLinking #Automation #DeveloperExperience
 
