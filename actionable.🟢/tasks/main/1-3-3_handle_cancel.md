@@ -1,7 +1,7 @@
 ---
 id: 1-3-3
 title: "Handle User Cancellation (Ctrl+C)"
-status: pending
+status: in_progress
 priority: medium
 assignee: "opencode"
 created: 2025-12-28
