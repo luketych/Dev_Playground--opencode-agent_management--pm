@@ -3,7 +3,7 @@ id: M3
 title: "TUI Interaction"
 phase: 2
 duration: "1 Hour"
-status: "In Progress"
+status: "Complete"
 priority: "Medium"
 branch: "feature/tui-interaction"
 tags: [ui, tui, inquirer]
@@ -13,7 +13,7 @@ dependencies: [M2]
 
 **Phase**: 2 - User Interface  
 **Duration**: 1 Hour  
-**Status**: In Progress  
+**Status**: Complete  
 **Priority**: Medium
 
 ## Deliverable
@@ -31,11 +31,14 @@ Interactive selection prompt for selecting the target agent.
 - [1-3-4] Add Scripted E2E Harness for opencode-agent-link
 - [1-3-4b] Add Explicit E2E Workspace Cleanup
 
+## Addendum Tasks
+- [1-3-5] Preserve prompt cleanup on Ctrl+C (remove manual SIGINT exit)
+
 ## Success Criteria
-- [ ] TUI appears with list of discovered agents when run in a valid directory.
-- [ ] Selection can be navigated with arrow keys.
-- [ ] Pressing Ctrl+C exits the program cleanly with code 0.
-- [ ] Selected agent name is correctly passed to the next stage of logic.
+- [x] TUI appears with list of discovered agents when run in a valid directory.
+- [x] Selection can be navigated with arrow keys.
+- [x] Pressing Ctrl+C exits the program cleanly with code 0.
+- [x] Selected agent name is correctly passed to the next stage of logic.
 
 ## Dependencies
 - Milestone 2 (Discovery Logic) completed.
@@ -49,6 +52,7 @@ Interactive selection prompt for selecting the target agent.
 - User flow now matches the PRD vision for interactivity.
 - Sets up asynchronous infrastructure for the linking step.
 
-## Progress
-- Tasks 1-3-1 through 1-3-3 are complete and in `tasks/review`.
-- Tasks 1-3-4 and 1-3-4b are in progress pending PR #11 (scripted E2E harness).
+## Review Notes
+- M3 tasks (1-3-1 through 1-3-4b) are archived with proofs in `actionable.🟢/tasks/archive/`.
+- Addendum task 1-3-5 is archived with proof.
+- Success criteria validated via task-level verification commands.
