@@ -1,12 +1,12 @@
 ---
 id: 1-4-1
 title: "Implement Symlink Creation Logic"
-status: not_started
+status: complete
 priority: high
 assignee: "opencode"
 created: 2025-12-29
 updated: 2025-12-29
-completed: null
+completed: 2025-12-29
 tags: [core, fs, symlink]
 milestone: M4
 dependencies: [M3]
@@ -59,4 +59,12 @@ ls -l opencode-agents/<agent>/.opencode/cwd
 7. DONE if the symlink exists, is a symlink, and its target equals the project root. GOOD-ENOUGH if the symlink exists and points to the project root, even if you did not inspect the exit code.
 
 ## Proof of Completion
-- TBD
+Verification run (2025-12-29):
+```
+node perimembrane/membrane/viscera/scripts/e2e_agent_link/setup.mjs
+# Selected gemini
+Created: opencode-agents/gemini/.opencode/cwd -> /Users/luketych/_/Dev/Dev_Playground/opencode-agent_management/code/perimembrane/membrane/viscera/scripts/e2e_agent_link/workspace
+EXIT_CODE: 0
+LINK: gemini -> /Users/luketych/_/Dev/Dev_Playground/opencode-agent_management/code/perimembrane/membrane/viscera/scripts/e2e_agent_link/workspace
+node perimembrane/membrane/viscera/scripts/e2e_agent_link/teardown.mjs
+```

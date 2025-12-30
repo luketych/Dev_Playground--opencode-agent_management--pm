@@ -1,12 +1,12 @@
 ---
 id: 1-4-4
 title: "Extend Scripted E2E Harness for Linking"
-status: not_started
+status: complete
 priority: low
 assignee: "opencode"
 created: 2025-12-29
 updated: 2025-12-29
-completed: null
+completed: 2025-12-29
 tags: [test, e2e, docs]
 milestone: M4
 dependencies: [1-4-1, 1-4-2]
@@ -56,4 +56,9 @@ node perimembrane/membrane/viscera/scripts/e2e_agent_link/help.mjs
 4. DONE if the help text includes all three verification steps and the documented flow works end-to-end. GOOD-ENOUGH if the help text includes the steps even if you have not re-run the flow yet.
 
 ## Proof of Completion
-- TBD
+Verification run (2025-12-29):
+```
+node perimembrane/membrane/viscera/scripts/e2e_agent_link/help.mjs
+2) Run the CLI (first run = create link)
+3) Run the CLI again (idempotent)
+```

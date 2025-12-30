@@ -1,12 +1,12 @@
 ---
 id: 1-4-2
 title: "Add Idempotency and Safety Checks"
-status: not_started
+status: complete
 priority: high
 assignee: "opencode"
 created: 2025-12-29
 updated: 2025-12-29
-completed: null
+completed: 2025-12-29
 tags: [core, fs, safety]
 milestone: M4
 dependencies: [1-4-1]
@@ -64,4 +64,16 @@ node /path/to/bin/opencode-agent-link
 8. DONE if idempotent runs produce "Already exists" with exit code 0 and conflict cases exit non-zero with a clear error. GOOD-ENOUGH if the idempotent case is correct and conflicts are detected even if the exact error text is still pending.
 
 ## Proof of Completion
-- TBD
+Verification run (2025-12-29):
+
+Idempotent case (second run):
+```
+Already exists: opencode-agents/gemini/.opencode/cwd -> /Users/luketych/_/Dev/Dev_Playground/opencode-agent_management/code/perimembrane/membrane/viscera/scripts/e2e_agent_link/workspace
+EXIT_CODE: 0
+```
+
+Conflict case (existing file at cwd):
+```
+Refusing to overwrite existing path: opencode-agents/gemini/.opencode/cwd (not a symlink)
+EXIT_CODE: 1
+```

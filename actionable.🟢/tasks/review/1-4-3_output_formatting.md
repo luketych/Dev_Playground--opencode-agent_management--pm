@@ -1,12 +1,12 @@
 ---
 id: 1-4-3
 title: "Finalize Output Formatting for Linking"
-status: not_started
+status: complete
 priority: medium
 assignee: "opencode"
 created: 2025-12-29
 updated: 2025-12-29
-completed: null
+completed: 2025-12-29
 tags: [cli, output]
 milestone: M4
 dependencies: [1-4-1, 1-4-2]
@@ -56,4 +56,8 @@ node /path/to/bin/opencode-agent-link
 8. DONE if the success and idempotent outputs match PRD examples exactly. GOOD-ENOUGH if output meaning and exit codes are correct and any minor formatting differences are documented.
 
 ## Proof of Completion
-- TBD
+Verification run (2025-12-29):
+```
+Created: opencode-agents/gemini/.opencode/cwd -> /Users/luketych/_/Dev/Dev_Playground/opencode-agent_management/code/perimembrane/membrane/viscera/scripts/e2e_agent_link/workspace
+Already exists: opencode-agents/gemini/.opencode/cwd -> /Users/luketych/_/Dev/Dev_Playground/opencode-agent_management/code/perimembrane/membrane/viscera/scripts/e2e_agent_link/workspace
+```
