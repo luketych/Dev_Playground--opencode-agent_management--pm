@@ -1,7 +1,6 @@
 ---
 id: M2
 title: "Agent Discovery Logic"
-phase: 1
 duration: "1 Hour"
 status: "Complete"
 priority: "High"

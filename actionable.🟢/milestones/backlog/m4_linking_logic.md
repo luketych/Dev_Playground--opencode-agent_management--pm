@@ -1,9 +1,8 @@
 ---
 id: M4
 title: "Symlink Creation & Idempotency"
-phase: 3
 duration: "1 Hour"
-status: "Not Started"
+status: "In Progress"
 priority: "High"
 branch: "feature/linking-logic"
 tags: [core, fs, symlink]
@@ -13,7 +12,7 @@ dependencies: [M3]
 
 **Phase**: 3 - Core Logic  
 **Duration**: 1 Hour  
-**Status**: Not Started  
+**Status**: In Progress  
 **Priority**: High
 
 ## Deliverable
@@ -26,13 +25,15 @@ Core linking functionality with idempotency and safety checks.
 
 ## Proposed Tasks
 - [1-4-1] Implement Symlink Creation Logic
-- [1-4-2] Implement Idempotency Guard (fs.lstat)
+- [1-4-2] Add Idempotency and Safety Checks
 - [1-4-3] Finalize Output Formatting for Linking Operations
+- [1-4-4] Extend Scripted E2E Harness for Linking
 
 ## Success Criteria
 - [ ] Symlink `cwd` is created in the correct location pointing back to project root.
 - [ ] Symlink target is an absolute path.
 - [ ] Second run on the same agent prints "Already exists" and does not error.
+- [ ] Conflicting existing path emits a clear error and non-zero exit.
 - [ ] Output exactly matches the PRD examples.
 
 ## Dependencies

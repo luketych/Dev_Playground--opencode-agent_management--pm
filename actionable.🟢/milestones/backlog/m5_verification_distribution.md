@@ -1,7 +1,6 @@
 ---
 id: M5
 title: "Verification & Distribution Prep"
-phase: 4
 duration: "1.5 Hours"
 status: "Not Started"
 priority: "Medium"

@@ -1,7 +1,6 @@
 ---
 id: M3
 title: "TUI Interaction"
-phase: 2
 duration: "1 Hour"
 status: "Complete"
 priority: "Medium"

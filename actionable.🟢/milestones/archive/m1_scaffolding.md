@@ -1,7 +1,6 @@
 ---
 id: M1
 title: "Project Scaffolding & CLI Skeleton"
-phase: 1
 duration: "1 Hour"
 status: "Complete"
 priority: "High"
